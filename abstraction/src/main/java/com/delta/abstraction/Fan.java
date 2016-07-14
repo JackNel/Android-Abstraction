@@ -7,6 +7,10 @@ import android.util.Log;
  */
 public class Fan extends Device {
 
+    public Fan() {
+        setDeviceName("Fan");
+    }
+
     public void turnOn() {
         Log.e(getDeviceName(), "Ahhh, cool breeze!");
     }

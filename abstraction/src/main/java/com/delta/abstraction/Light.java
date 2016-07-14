@@ -7,6 +7,10 @@ import android.util.Log;
  */
 public class Light extends Device {
 
+    public Light() {
+        setDeviceName("Light");
+    }
+
     public void turnOn() {
         Log.e(getDeviceName(), "I can see!");
     }
