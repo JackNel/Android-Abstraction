@@ -16,12 +16,14 @@ public class AbstractionActivity extends Activity {
         //
         Fan myFan = new Fan();
         Light myLight = new Light();
+        Switch mySwitch = new Switch();
 
-        myFan.turnOn();
-        myLight.turnOn();
+        mySwitch.registerCallback(myFan);
+        mySwitch.registerCallback(myLight);
 
-        myFan.turnOff();
-        myLight.turnOff();
+        mySwitch.flipSwitchUp();
+        mySwitch.flipSwitchDown();
+
 
         myFan.breakDevice();
         myLight.breakDevice();

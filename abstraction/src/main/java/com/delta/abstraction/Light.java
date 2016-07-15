@@ -16,11 +16,11 @@ public class Light extends Device {
     }
 
     public void turnOff() {
-        Log.e(getDeviceName(), "It's too bright outside for the light to be on" );
+        Log.e(getDeviceName(), "It's too bright outside for the light to be on." );
     }
 
     @Override
     public void breakDevice() {
-        Log.e(getDeviceName(), "It's dark and I can't see because the light broke");
+        Log.e(getDeviceName(), "It's dark and I can't see because the light broke.");
     }
 }
